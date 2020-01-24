@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Татьяна Ли](https://up.htmlacademy.ru/htmlcss/27/user/703337).
-* Наставник: `Дмитрий Гуляев`.
-* Наставник: `Дима Гуляев`.
+* Студент: [Татьяна Панина](https://up.htmlacademy.ru/htmlcss/27/user/703337).
+* Наставник: `Дмитрий Гуляев` (https://htmlacademy.ru/profile/dima).
 
 ---
 
