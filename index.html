@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Тур Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header">
+	  <section class="container">
+	    <header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html"><img src="img/logo.svg"   width="140" height="71" alt="Логотип Седона"></a>
 			 <ul class="site-navigation">
@@ -19,20 +22,55 @@
 		
 	<main>
 		<section class="main-page">
-			<div>
-				<img src="img/welcome.png" alt="Welcome to Sedona" srcset="img/welcome2x.png 2x, img/welcome3x.png 3x" class="welcome">
-			</div>
+			<img class="welcome" src="img/welcome.png" alt="Welcome to Sedona">
 		</section>
-		
 	</main>
 		
-  	<footer>
-		<b>Седона-небольшой городок в Аризоне, заслуживающий большего!</b>
-
-		<a href="#">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</a> 
+  	    <section class="description-of-benefits">
+			
+			<p class="sedona">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+			<p class="reasons"><a href="#">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</a></p> 
+		</section>
+	
+	
+		<footer class="main-footer">
+		<p class="footer-contacts">
+			#Vizitsedona Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a></p>
 		
+		<ul>
+		<li><a class=" social-button" href="#">Вконтакте</a></li>
+		<li><a class=" social-button" href="#">Фейсбук</a></li>
+		<li><a class=" social-button" href="#">Ютуб</a></li>
+		</ul>
+		
+		<p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+		 width="115" height="41" alt="Логотип Html академии"></a></p>
 	</footer>
-    
-
+	
+	<section class="modal">
+		<p>Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+		<h2 class="button button-brown">Поиск гостиницы в Седоне</h2>
+		<form class="search-hotel" action="https://assets.htmlacademy.ru" method="post">
+			
+			<label>Дата заезда:
+			<input type="text" name="date-of-arrival" placeholder="24 АПРЕЛЯ 2017" autofocus>
+			</label>
+			
+			<label>
+			Дата выезда:
+			<input type="text" name="date-of-departure" placeholder="4 ИЮЛЯ 2017">
+			</label>
+			
+			<label>
+			Взрослые:
+			<input type="number" name="adult" placeholder="2">
+			</label>
+			
+			<label>Дети:
+			<input type="number" name="children">
+			</label>
+			<button class="button" type="submit">Найти</button>
+		</form>
+	</section>
   </body>
-</html>
+ </html>

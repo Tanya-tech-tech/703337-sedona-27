@@ -3,42 +3,45 @@
 	 <head>
 		 <meta charset="utf-8">
 		 <title>Отели Седона</title>
+		 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+		 <link href="css/style.css" rel="stylesheet">
      </head>
  <body>
-	 <header class="main-header">
-		 <nav class="main-navigation">
-			 <a class="main-header-logo" href="index.html"><img src="img/logo.svg"   width="140" height="71" alt="Логотип Седона"></a>
-			 <ul class="site-navigation">
-				 <li><a href="info.html">Информация</a></li>
-				 <li><a href="photo.html">Фото и видео</a></li>
-				 <li><a href="map.html">Карта штата</a></li>
-				 <li class="breadcrumbs-current">Гостиницы</li>
-			 </ul>
-		 </nav>
-     </header>
-		
-	 <main>
-		 <section class="filters">
-			 <h2 class="visually-hidden">Фильтр гостиниц</h2>
-			 <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="">
-				 <fieldset>
-					 <legend>Инфраструктура</legend>
-					 <label><input type="checkbox" name="pool" checked>Бассейн </label>
-					 <label><input type="checkbox" name="parking">Парковка </label>
-					 <label><input type="checkbox" name="wifi">Wi-Fi </label>
-				 </fieldset>
-				 
-				 <fieldset>
-					 <legend>Тип жилья</legend>
-					 <label><input type="checkbox" name="hotel" checked>Гостиница </label>
-					 <label><input type="checkbox" name="motel" checked>Мотель </label>
-					 <label><input type="checkbox" name="apartments" checked>Апартаменты </label>
-			     </fieldset>
+	 <section class="container-hotel">
+		 <section class="above-background-color">
+			 <header class="main-header">
+				 <nav class="main-navigation">
+					 <a class="main-header-logo" href="index.html"><img src="img/logo.svg"   width="140" height="71" alt="Логотип Седона"></a>
+					 <ul class="site-navigation">
+						 <li><a href="info.html">Информация</a></li>
+						 <li><a href="photo.html">Фото и видео</a></li>
+						 <li><a href="map.html">Карта штата</a></li>
+						 <li class="breadcrumbs-current">Гостиницы</li>
+					</ul>
+				</nav>
+			</header>
+			
+			
+				<section class="filters">
+					<h2 class="visually-hidden">Фильтр гостиниц</h2>
+					<form action="https://echo.htmlacademy.ru/courses" method="post" oninput="">
+						<fieldset>
+							<legend>Инфраструктура</legend>
+							<label><input type="checkbox" name="pool" checked>Бассейн </label>
+							<label><input type="checkbox" name="parking">Парковка </label>
+							<label><input type="checkbox" name="wifi">Wi-Fi </label>
+						</fieldset>
+						<fieldset>
+							<legend>Тип жилья</legend>
+							<label><input type="checkbox" name="hotel" checked>Гостиница </label>
+							<label><input type="checkbox" name="motel" checked>Мотель </label>
+							<label><input type="checkbox" name="apartments" checked>Апартаменты </label>
+						</fieldset>
 					<div>Стоимость в сутки (р):
-					От 0 до 3000
+							От 0 до 3000
 			     
-					<input type="range" min="0" max="3000" name="costcount">
-					<button type="button">Показать</button>
+						<input type="range" min="0" max="3000" name="costcount">
+						<button  class="button" type="submit">Показать</button>
 					</div>
 			
 			<!--Можно пока не делать 
@@ -46,10 +49,14 @@
 			Найдено:
 			<output name="hoteloutput">	
 			</div>
-			<div class="sort">Сортировка:
+			<div class="sort">
+			<fieldset>
+			<legend>Сортировка:</legend>
+			
 			<input type="text">По цене
 			<input type="text">По типу
 			<input type="text">По рейтингу
+			
 			</div>-->
 			
 			</form>
@@ -76,8 +83,8 @@
 					<img src="img/star.svg" alt="Изображение звезд">
 				</div>
 				<p>Рейтинг: 8,5</p>
-				<a href="#">Подробнее</a>
-				<button type="button">Забронировать</button>
+				<a class="button button-link" href="#">Подробнее</a>
+				<button  class="button button-brown" type="button">Забронировать</button>
 				</li>
 				
 				<li>
@@ -94,8 +101,8 @@
 					<img src="img/star.svg" alt="Изображение звезд">
 				    </div>
 				    <p>Рейтинг: 8,9</p>
-				    <a href="#">Подробнее</a>
-				    <button type="button">Забронировать</button>
+				    <a class="button button-link" href="#">Подробнее</a>
+				    <button class="button button-brown" type="button">Забронировать</button>
 				</li>
 				
 				<li>
@@ -111,17 +118,15 @@
 					<img src="img/star.svg" alt="Изображение звезд">
 					</div>
 				    <p>Рейтинг: 9,2</p>
-				    <a href="#">Подробнее</a>
-				    <button type="button">Забронировать</button>				
+				    <a class="button button-link" href="#">Подробнее</a>
+				    <button  class="button button-brown" type="button">Забронировать</button>				
 				</li>
 			</ul>
 		</section>	
-	</main>
-		
+			
   	<footer class="main-footer">
 		<p class="footer-contacts">
 			#Vizitsedona Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a></p>
-
 		
 		<ul>
 		<li><a class=" social-button" href="#">Вконтакте</a></li>
@@ -129,8 +134,11 @@
 		<li><a class=" social-button" href="#">Ютуб</a></li>
 		</ul>
 		
-		<p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss" class="button"><img src="img/logo-htmlacademy.svg"
+		<p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
 		 width="115" height="41" alt="Логотип Html академии"></a></p>
 	</footer>
+	
+	</section>
+	</section>
  </body>
  </html>
