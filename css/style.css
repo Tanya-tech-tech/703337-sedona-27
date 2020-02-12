@@ -51,7 +51,7 @@
  border: none;
  color: #ffffff;
  background-color: #81b3d2;
- height: 27px;
+ min-height: 27px;
  }
  
  .button:hover {
@@ -80,7 +80,7 @@
  
  .button-link {
  display: inline-block;
- width: 110px;
+ min-width: 110px;
  }
   
  .main-navigation {
@@ -142,7 +142,7 @@
  
  .description-of-benefits  {
  display: block;
- margin: 0;
+ margin-top: -2px;
  
  
  background-color: #ffffff;
