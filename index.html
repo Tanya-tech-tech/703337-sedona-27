@@ -14,7 +14,7 @@
 			 <ul class="site-navigation">
 				 <li><a href="info.html">Информация</a></li>
 				 <li><a href="photo.html">Фото и видео</a></li>
-				 <li class="place for logo"></li>
+				 <li class="place-for-logo"></li>
 				 <li><a href="map.html">Карта штата</a></li>
 				 <li><a href="sedona_hotels.html">Гостиницы</a></li>
 			 </ul>
@@ -34,7 +34,8 @@
 			<p class="sedona">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</p>
 			<p class="reasons"><a href="info.html">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</a></p> 
 		</section>
-	
+		<p class="reserve"><span class="interested">Заинтересовались? </span><br>Укажите предполагаемые даты поездки, <br>
+		и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	</div>
 	
 	<footer class="main-footer">
@@ -62,28 +63,40 @@
 	</footer>
 	
 	<section class="modal">
-		<p class="reserve"><span class="interested">Заинтересовались? </span><br>Укажите предполагаемые даты поездки, <br>
-		и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+		
 		<div class="button button-brown search">Поиск гостиницы в Седоне</div>
 		<form class="search-hotel" action="https://assets.htmlacademy.ru" method="post">
+			<div class="to-make-it-work">
+				<label for="date-of-arrival">Дата заезда:</label>
+				<input type="text" name="date-of-arrival" id="date-of-arrival" placeholder="24 АПРЕЛЯ 2017" autofocus>
+			</div>
+			<div class="to-make-it-work">
+				<label>Дата выезда:</label>
+				<input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 ИЮЛЯ 2017">
+			</div>
 			
-			<label>Дата заезда:
-			<input type="text" name="date-of-arrival" placeholder="24 АПРЕЛЯ 2017" autofocus>
-			</label>
-			
-			<label>
-			Дата выезда:
-			<input type="text" name="date-of-departure" placeholder="4 ИЮЛЯ 2017">
-			</label>
-			<div>
-				<label>
+			<div class="unusual">
+				<label for="adult">
 					Взрослые:
-					<input type="number" name="adult" placeholder="2">
 				</label>
+				<button type="button">
+						<span class="visually-hidden">Минус</span>-
+				</button>
+				<input  type="text" name="adult" id="adult" placeholder="2" value="2">
+				<button type="button">
+						<span class="visually-hidden">Плюс</span>+
+				</button>
 			
-				<label>Дети:
-					<input type="number" name="children">
+				<label for="children">
+					Дети:
 				</label>
+				<button type="button">
+						<span class="visually-hidden">Минус</span>-
+				</button>
+				<input  type="text" name="children" id="children" value="0">
+				<button type="button">
+						<span class="visually-hidden">Плюс</span>+
+				</button>
 			</div>
 			<button class="button" type="submit">Найти</button>
 		</form>
