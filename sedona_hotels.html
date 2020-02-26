@@ -15,14 +15,14 @@
 					 <ul class="site-navigation">
 						 <li><a href="info.html">Информация</a></li>
 						 <li><a href="photo.html">Фото и видео</a></li>
+						 <li class="place-for-logo"></li>
 						 <li><a href="map.html">Карта штата</a></li>
 						 <li class="breadcrumbs-current">Гостиницы</li>
-					</ul>
+					 </ul>
 				</nav>
 			</header>
 			
-			
-				<section class="filters">
+			<section class="filters">
 					<h2 class="visually-hidden">Фильтр гостиниц</h2>
 					<form action="https://echo.htmlacademy.ru/courses" method="post" oninput="">
 						<fieldset>
@@ -37,114 +37,109 @@
 							<label><input type="checkbox" name="motel" checked>Мотель </label>
 							<label><input type="checkbox" name="apartments" checked>Апартаменты </label>
 						</fieldset>
-					<div>Стоимость в сутки (р):
+						<div>Стоимость в сутки (р):
 							От 0 до 3000
 			     
-						<input type="range" min="0" max="3000" name="costcount">
-						<button  class="button" type="submit">Показать</button>
-					</div>
-			
-			<!--Можно пока не делать 
-			<div class="output-area">
-			Найдено:
-			<output name="hoteloutput">	
-			</div>
-			<div class="sort">
-			<fieldset>
-			<legend>Сортировка:</legend>
-			
-			<input type="text">По цене
-			<input type="text">По типу
-			<input type="text">По рейтингу
-			
-			</div>-->
-			
-			</form>
-			
-		</section>
-		
-		<section class="photos-hotel">
-			
-			<h2 class="visually-hidden">Список отелей</h2>
-			
-			<ul class="hotel-list">
-				<li>
-					<img src="img/hotel-picture1.jpg" alt="Фотография отеля">
-				<div class="great-description">	
-					
-						<a class="title-hotel" href="#">Amara resort & Spa</a>
-						
-					<div class="for-span">
-						<span>Гостиница</span>
-						<span>от 4000</span>
-					</div>
-					<div class="for-button">
-						<a class="button button-link" href="#">Подробнее</a>
-						<button  class="button button-brown" type="button">Забронировать</button>
-					</div>
-				</div>	
-				
-					<div class="star">
-						<h3 class="visually-hidden">Количество звезд у отеля</h3>
-						<div class="star-again">
-							<img src="img/star.svg" alt="Изображение звезд">
-							<img src="img/star.svg" alt="Изображение звезд">
-							<img src="img/star.svg" alt="Изображение звезд">
-							<img src="img/star.svg" alt="Изображение звезд">
+							<input type="range" min="0" max="3000" name="costcount">
+							<button  class="button" type="submit">Показать</button>
 						</div>
-						    <div class="rating">Рейтинг: 8,5</div>
-					</div>
-				</li>
+			
+					</form>
+			</section>
+			
+			<section class="photos-hotel">
 				
-				<li>
-					<img src="img/hotel-picture2.jpg" alt="Фотография отеля">
-					<div class="great-description">
-							<a class="title-hotel" href="#">Desert Quail Inn </a>
+				<div class="output-area">
+					<div class="sort">
+						<p>Найдено: 3</p>
+						<p>Сортировка:</p>
+							<ul>
+								<li><a href="#">По цене</a></li>
+								<li><a href="#">По типу</a></li>
+								<li><a href="#">По рейтингу</a></li>
+							</ul>
+					</div>
+				</div>
+			
+				<h2 class="visually-hidden">Список отелей</h2>
+			
+				<ul class="hotel-list">
+					<li>
+						<img src="img/hotel-picture1.jpg" alt="Фотография отеля">
+						<div class="great-description">	
+					
+							<a class="title-hotel" href="#">Amara resort & Spa</a>
+						
 							<div class="for-span">
-								<span>Мотель</span>
-								<span>от 3000</span>
+								<span>Гостиница</span>
+								<span>от 4000</span>
 							</div>
 							<div class="for-button">
 								<a class="button button-link" href="#">Подробнее</a>
-								<button class="button button-brown" type="button">Забронировать</button>
+								<button  class="button button-brown" type="submit">Забронировать</button>
 							</div>
-					</div>
-					<div class="star">
-						<h3 class="visually-hidden">Количество звезд у отеля</h3>
-						<div class="star-again">
-						   <img src="img/star.svg" alt="Изображение звезд">
-						   <img src="img/star.svg" alt="Изображение звезд">
-						   <img src="img/star.svg" alt="Изображение звезд">
-						</div>
-						<div class="rating">Рейтинг: 8,9</div>
-					</div>
-				</li>
-				
-				<li>
-					<img src="img/hotel-picture3.jpg" alt="Фотография отеля">
-					<div class="great-description">
-						<a class="title-hotel" href="#">Villas at Poco Diablo</a>
-						<div class="for-span">
-							<span>Апартаменты</span>
-							<span>от 2000</span>
-						</div>
-						<div class="for-button">
-							<a class="button button-link" href="#">Подробнее</a>
-							<button  class="button button-brown" type="button">Забронировать</button>
 						</div>	
-					</div>
-					<div class="star">
-						<h3 class="visually-hidden">Количество звезд у отеля</h3>
-						<div class="star-again">
-							<img src="img/star.svg" alt="Изображение звезд">
-							<img src="img/star.svg" alt="Изображение звезд">
-						</div>
-						<div class="rating">Рейтинг: 9,2</div>
-					</div>				
-				</li>
 				
-			</ul>
-		</section>	
+							<div class="star">
+								<h3 class="visually-hidden">Количество звезд у отеля</h3>
+								<div class="star-again">
+									<img src="img/star.svg" alt="Изображение звезд">
+									<img src="img/star.svg" alt="Изображение звезд">
+									<img src="img/star.svg" alt="Изображение звезд">
+									<img src="img/star.svg" alt="Изображение звезд">
+								</div>
+								<div class="rating">Рейтинг: 8,5</div>
+							</div>
+						</li>
+				
+						<li>
+							<img src="img/hotel-picture2.jpg" alt="Фотография отеля">
+							<div class="great-description">
+								<a class="title-hotel" href="#">Desert Quail Inn </a>
+								<div class="for-span">
+									<span>Мотель</span>
+									<span>от 3000</span>
+								</div>
+								<div class="for-button">
+									<a class="button button-link" href="#">Подробнее</a>
+									<button class="button button-brown" type="submit">Забронировать</button>
+								</div>
+							</div>
+							<div class="star">
+								<h3 class="visually-hidden">Количество звезд у отеля</h3>
+								<div class="star-again">
+									<img src="img/star.svg" alt="Изображение звезд">
+									<img src="img/star.svg" alt="Изображение звезд">
+									<img src="img/star.svg" alt="Изображение звезд">
+								</div>
+								<div class="rating">Рейтинг: 8,9</div>
+							</div>
+						</li>
+				
+						<li>
+							<img src="img/hotel-picture3.jpg" alt="Фотография отеля">
+							<div class="great-description">
+								<a class="title-hotel" href="#">Villas at Poco Diablo</a>
+								<div class="for-span">
+									<span>Апартаменты</span>
+									<span>от 2000</span>
+								</div>
+								<div class="for-button">
+									<a class="button button-link" href="#">Подробнее</a>
+									<button  class="button button-brown" type="submit">Забронировать</button>
+								</div>	
+							</div>
+							<div class="star">
+								<h3 class="visually-hidden">Количество звезд у отеля</h3>
+								<div class="star-again">
+									<img src="img/star.svg" alt="Изображение звезд">
+									<img src="img/star.svg" alt="Изображение звезд">
+								</div>
+								<div class="rating">Рейтинг: 9,2</div>
+							</div>				
+						</li>
+					</ul>
+			</section>	
 			
   	<footer class="main-footer">
 		<p class="footer-contacts">
@@ -171,6 +166,7 @@
 	</footer>
 	
 	</section>
-	</section>
+</section>
+	
  </body>
  </html>
