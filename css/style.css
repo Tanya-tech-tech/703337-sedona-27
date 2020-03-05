@@ -380,7 +380,7 @@
  flex-direction: column;
  box-sizing: border-box;
  width: 1200px;
- height: 291px;
+ height: 205px;
  text-align: center;
  line-height: 24px;
  font-weight: normal;
@@ -392,6 +392,7 @@
  .for-position {
  position: relative;
  display: flex;
+ flex-direction: column;
  width: 1200px;
  margin: 0 auto;
  /*border: 5px solid gray;*/
@@ -400,12 +401,66 @@
  position: absolute;
  left: 316px;
  top: 205px;
- /*display: none;*/
+ display: none;
   
  }
- .modal .search {
+ @keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+ .modal-show {
+  display: block;
+  animation: bounce 1s;
+}
+
+.modal-error {
+display: block;
+  animation: shake 1s;
+}
+.for-center {
+background-color: #ffffff;
+}
+
+ .search {
  width: 568px;
  height: 86px;
+ margin: 0 auto;
  display: block;
  font-size: 21px;
   
@@ -561,6 +616,9 @@
  margin-bottom: 29px;
  /*border: 1px solid;*/
  }
+ .to-make-it-work input[type="text"]{
+ background-color: #f2f2f2;
+ }
  .to-make-it-work svg {
  position: absolute;
  top: 9px;
@@ -640,7 +698,7 @@ padding-left: 53px;
  width: 38px;
  height: 38px;
  padding-left: 0;
- background: #f2f2f2;
+ background-color: #f2f2f2;
  /*border: none;*/
  /*border: 1px solid;*/
  }
