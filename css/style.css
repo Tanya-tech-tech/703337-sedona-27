@@ -723,7 +723,7 @@ background-color: #ffffff;
  position: relative;
  width: 1200px;
  height: 473px;
- border: 2px solid green;
+ /*.border: 2px solid green;*/
  margin: 0 auto;
  box-shadow: 3px 0 10px 0 rgba(204, 204, 204, 0.5),
  -3px 0 10px 0 rgba(204, 204, 204, 0.5);
