@@ -720,14 +720,23 @@ background-color: #ffffff;
  /*border: 2px solid gray;*/
  }
  .map {
- display: flex;
+ position: relative;
  width: 1200px;
- /*border: 2px solid green;*/
+ height: 473px;
+ border: 2px solid green;
  margin: 0 auto;
  box-shadow: 3px 0 10px 0 rgba(204, 204, 204, 0.5),
  -3px 0 10px 0 rgba(204, 204, 204, 0.5);
- 
+ overflow: hidden;
  }
+ 
+ .map iframe {
+ 
+ position: absolute;
+ top: 0;
+ left: 0;
+ }
+ 
   .main-footer {
  
  display: flex;

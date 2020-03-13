@@ -32,7 +32,7 @@ close.addEventListener("click", function (evt) {
     popup.classList.remove("modal-error");
     });
     
-form.addEventListener("click", function (evt) {
+form.addEventListener("submit", function (evt) {
 	if (!arrival.value || !departure.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
