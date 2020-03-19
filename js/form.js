@@ -1,6 +1,7 @@
 var link = document.querySelector(".search");
 var popup = document.querySelector(".modal");
 var close = document.querySelector(".map");
+var closse = document.querySelector(".reserve");
 var arrival = popup.querySelector("[name=date-of-arrival]");
 var departure = popup.querySelector("[name=date-of-departure]");
 var form = popup.querySelector("form");
@@ -32,7 +33,13 @@ close.addEventListener("click", function (evt) {
     popup.classList.remove("modal-error");
     });
     
-form.addEventListener("submit", function (evt) {
+closse.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+    });
+    
+form.addEventListener("click", function (evt) {
 	if (!arrival.value || !departure.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");

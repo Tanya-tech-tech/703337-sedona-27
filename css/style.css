@@ -592,7 +592,7 @@
  /*border: 2px solid green;*/
  }
  .for-position {
- position: relative;
+  position: relative;
  display: flex;
  flex-direction: column;
  width: 1200px;
@@ -602,6 +602,7 @@
  -3px 0 10px 0 rgba(204, 204, 204, 0.5);
  /*border: 5px solid gray;*/
  }
+ 
  .modal {
  position: absolute;
  left: 316px;
@@ -610,20 +611,21 @@
   
  }
  @keyframes bounce {
+ 
   0% {
-    transform: translateX(-2000px);
+    transform: translateY(0px);
   }
 
   70% {
-    transform: translateX(30px);
+    transform: translateY(-2px);
   }
 
   90% {
-    transform: translateX(-10px);
+    transform: translateY(-1px);
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -720,7 +722,7 @@ background-color: #ffffff;
  /*border: 2px solid gray;*/
  }
  .map {
- position: relative;
+ 
  width: 1200px;
  height: 473px;
  /*.border: 2px solid green;*/
@@ -732,9 +734,9 @@ background-color: #ffffff;
  
  .map iframe {
  
- position: absolute;
+ /*position: absolute;
  top: 0;
- left: 0;
+ left: 0;*/
  }
  
   .main-footer {
