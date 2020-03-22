@@ -1,6 +1,6 @@
 var link = document.querySelector(".search");
 var popup = document.querySelector(".modal");
-var close = document.querySelector(".map");
+var close = document.querySelector(".close");
 var closse = document.querySelector(".reserve");
 var arrival = popup.querySelector("[name=date-of-arrival]");
 var departure = popup.querySelector("[name=date-of-departure]");
